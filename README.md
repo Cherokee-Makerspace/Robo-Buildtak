@@ -21,6 +21,7 @@ This is for a Robo 3D R1+ with the following mods:
 
 #### configuration.h
 `#define BAUDRATE 115200`
+
 `#define CUSTOM_MACHINE_NAME "Robo 3D R1+"`
 
 //============================= Thermal Settings ============================
@@ -31,34 +32,57 @@ This is for a Robo 3D R1+ with the following mods:
 
 //============================= Z Probe Options =============================
 `#define FIX_MOUNTED_PROBE`
-`#define XY_PROBE_FEEDRATE (180*60)`
+
+
+`#define NOZZLE_TO_PROBE_OFFSET { 0, 0, 0 }`
+
+`#define PROBING_MARGIN 35`
+
+`#define XY_PROBE_FEEDRATE (200*60)`
+
 
 `#define INVERT_X_DIR true`
+
 `#define INVERT_Y_DIR false`
+
 `#define INVERT_Z_DIR true`
 
+
 `#define X_BED_SIZE 220`
+
 `#define Y_BED_SIZE 200`
 
 `#define MIN_SOFTWARE_ENDSTOPS false`
 
 //=============================== Bed Leveling ==============================
 `#define AUTO_BED_LEVELING_BILINEAR`
+
 `#define ENABLE_LEVELING_AFTER_G28`
+
 `#define PREHEAT_BEFORE_LEVELING`
+
 `#define LCD_BED_LEVELING`
+
+`#define Z_SAFE_HOMING`
 
 //============================= Additional Features ===========================
 `#define PREHEAT_2_LABEL       "PETG"
+
 `#define PREHEAT_2_TEMP_HOTEND 240`
+
 `#define PREHEAT_2_TEMP_BED     75`
+
 `#define PREHEAT_2_TEMP_CHAMBER 35`
+
 `#define PREHEAT_2_FAN_SPEED     0` // Value from 0 to 255
 
 //============================= LCD and SD support ============================
 `#define SDSUPPORT`
+
 `#define SD_CHECK_AND_RETRY`
+
 `#define SLIM_LCD_MENUS`
+
 `#define SPEAKER`
 
 //======================== LCD / Controller Selection =========================
@@ -67,8 +91,12 @@ This is for a Robo 3D R1+ with the following mods:
 
 #### configuration_adv_.h
 `#define BABYSTEPPING`
+
 `#define BABYSTEP_MILLIMETER_UNITS`
+
 `#define BABYSTEP_MULTIPLICATOR_Z  0.05`
+
 `#define BABYSTEP_MULTIPLICATOR_XY  0.05`
+
 
 `#define HOST_ACTION_COMMANDS`

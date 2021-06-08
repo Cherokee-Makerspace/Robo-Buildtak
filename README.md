@@ -10,7 +10,7 @@ Reset settings with M502 and M500 after flashing with new firmware.
 This is for a Robo 3D R1+ with the following mods:
 * [Buildtak FlexPlate System 9x10](https://www.matterhackers.com/store/l/buildtak-flexplate-system-9-x-10/sk/MPZ03EZP)
 * [300mm Y-Axis Linear Rods](https://amzn.to/3cceJ6K)
-* RepRap Full Graphic Smart Controller
+* RepRap Smart Controller
 * OctoPrint
 
 1. Robo 3D needed a 10x10 FlexPlate but the 9x10 was a donation.
@@ -87,7 +87,7 @@ This is for a Robo 3D R1+ with the following mods:
 
 //======================== LCD / Controller Selection =========================
 //========================   (Character-based LCDs)   =========================
-`#define REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER`
+`#define REPRAP_DISCOUNT_SMART_CONTROLLER`
 
 #### configuration_adv_.h
 `#define BABYSTEPPING`
